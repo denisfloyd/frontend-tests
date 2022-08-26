@@ -7,6 +7,6 @@ describe("Object to query string", () => {
       profession: "developer",
     };
 
-    expect(queryString(obj)).toBe("name=Denis&profession=developer");
+    expect(queryString(obj)).toBe('name=Denis&profession=developer');
   });
 });
