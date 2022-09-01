@@ -26,6 +26,7 @@ describe('Cart', () => {
         product,
         quantity: 2,
       };
+      ``;
 
       cart.add(item);
 
@@ -102,6 +103,23 @@ describe('Cart', () => {
       cart.checkout();
 
       expect(cart.getTotal().getAmount()).toEqual(0);
+    });
+  });
+
+  describe('special conditions', () => {
+    it('should apply percentage discount quantity above minimum is passed', () => {
+      const condition = {
+        percentage: 30,
+        minimum: 2,
+      };
+
+      cart.add({
+        product,
+        condition,
+        quantity: 3,
+      });
+
+      expect(cart.getTotal().getAmount()).toEqual(74315);
     });
   });
 });
