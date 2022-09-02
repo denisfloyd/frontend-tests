@@ -75,7 +75,7 @@ export default class Cart {
     }, Money({ amount: 0 }));
   }
 
-  sumary() {
+  summary() {
     const total = this.getTotal();
     const formatted = total.toFormat('$0,0.00');
     const items = this.items;
@@ -88,7 +88,7 @@ export default class Cart {
   }
 
   checkout() {
-    const { total, items } = this.sumary();
+    const { total, items } = this.summary();
 
     this.items = [];
 
