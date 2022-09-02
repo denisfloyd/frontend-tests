@@ -79,7 +79,7 @@ describe('Cart', () => {
       expect(cart.checkout()).toMatchSnapshot();
     });
 
-    it('should return an object with the total and the list of items when sumary() is called ', () => {
+    it('should return an object with the total and the list of items when sumary() is called', () => {
       cart.add({
         product,
         quantity: 5,
