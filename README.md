@@ -6,7 +6,7 @@
 
 Este repositório conterá todo o código-fonte do curso (módulo 1). Cada módulo contará com sua própria pasta, que por sua vez viverão dentro de seu branch exclusivo.
 
-Para ter acesso a todos os commits deste branch, basta acesssar: https://github.com/denismend/frontend-tests/commits/main
+Para ter acesso a todos os commits deste branch, basta acesssar: https://github.com/denisfloyd/frontend-tests/commits/main
 
 É bastante útil ter acesso aos commits pois venho tentando fazer um commit ao final de cada aula, então, você poderá ver o código introduzido naquela aula em específico.
 
